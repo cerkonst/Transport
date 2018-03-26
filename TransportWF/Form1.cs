@@ -30,7 +30,7 @@ namespace TransportWF
             double Sum = 0;
             for (int i=0;i< TPS.Marshrut_A_B_List.Count;i++)
             {
-                Sum = TPS.Marshrut_A_B_List[i].Price;
+                Sum += TPS.Marshrut_A_B_List[i].Price;
                 Info.Items.Add(TPS.Marshrut_A_B_List[i].Name.ToString() + "  " + TPS.Marshrut_A_B_List[i].Price.ToString());
             }
             numericUpDown1.Value = (decimal)Sum;
